@@ -7,15 +7,46 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-.header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/*---------------------------------HEADER--------------------------------*/
+
 .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
 }
 
 .header-title-link {
@@ -26,15 +57,17 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  margin-right: 76px;
+  margin-left: 156px;
 }
 .accent {
   color: #4d5ae5;
 }
 
 .header-list {
-}
-
-.header-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-link {
@@ -56,9 +89,11 @@ a {
 }
 
 .address-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 156px;
 }
-.address-item {
-}
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -85,6 +120,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-top: 188px;
 }
 .hero-section-button {
   font-weight: 500;
@@ -94,6 +130,17 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  display: block;
+  margin: 48px auto 188px;
+}
+
+.hero-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-section-button:hover {
@@ -103,13 +150,32 @@ a {
   background-color: #404bbf;
 }
 /*-------------------BENEFITS-------------------*/
-.benefits-section {
-}
-.benefits-section-title {
+
+.benefits-section-header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .benefits-section-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 120px auto;
 }
+
 .benefits-section-item {
+  display: block;
+  max-width: 264px;
+}
+
+.benefits-section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -127,6 +193,7 @@ a {
 
 .team-section {
   background-color: #f4f4fd;
+  height: 732px;
 }
 
 .team-section-title {
@@ -136,8 +203,24 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
+
+.team-section-container {
+  display: inline-block;
+  justify-content: center;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px;
+  width: 264px;
+  height: 380px;
+}
+
 .team-section-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .team-section-item {
   background-color: #fff;
@@ -154,6 +237,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .team-section-position {
@@ -163,12 +248,11 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 /*--------------------PORTFOLIO--------------*/
 
-.portfolio-section {
-}
 .portfolio-section-title {
   font-weight: 700;
   font-size: 36px;
@@ -176,10 +260,21 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.portfolio-section-list {
+
+.portfolio-section-item-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 48px;
 }
+
 .portfolio-section-item {
+  display: inline-block;
+  width: 360px;
+  height: 420px;
 }
 .portfolio-section-headers {
   font-weight: 500;
@@ -187,6 +282,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .portfolio-section-text {
   font-weight: 400;
@@ -195,9 +291,19 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+.portfolio-section-text-container {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+}
 /*----------------------FOOTER-----------------*/
 .footer {
   background-color: #2e2f42;
+  height: 312px;
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
@@ -207,6 +313,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  padding-bottom: 16px;
 }
 .footer-text {
   font-weight: 400;
@@ -214,4 +321,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  width: 264px;
+  height: 112px;
+  padding-left: 156px;
 }
