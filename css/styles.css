@@ -37,9 +37,9 @@ main {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
+  min-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*---------------------------------HEADER--------------------------------*/
@@ -121,15 +121,18 @@ main {
 
 .hero-section {
   background-color: #2e2f42;
+  height: 600px;
 }
 .hero-section-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #fff;
-  padding-top: 188px;
+  margin-top: 188px;
   max-width: 496px;
 }
 .hero-section-button {
@@ -163,16 +166,7 @@ main {
 /*-------------------BENEFITS-------------------*/
 
 .benefits-section-header {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  visibility: hidden;
 }
 
 .benefits-section-list {
@@ -224,20 +218,25 @@ main {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team-section-item {
   background-color: #fff;
   display: inline-block;
   justify-content: center;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px;
+  /* padding: 0px 0px 32px; */
   width: 264px;
   height: 380px;
 }
 .team-section-img {
   width: 264px;
   height: 260px;
+}
+
+.team-section-text-container {
+  width: 232px;
+  height: 56px;
+  margin: 32px 16px;
 }
 
 .team-section-names {
@@ -247,7 +246,7 @@ main {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 32px;
+  /* padding-top: 32px; */
   padding-bottom: 8px;
 }
 
@@ -258,7 +257,7 @@ main {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 
 /*--------------------PORTFOLIO--------------*/
@@ -271,7 +270,7 @@ main {
   text-align: center;
   color: #2e2f42;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 72px;
 }
 
 .portfolio-section-list {
@@ -285,10 +284,20 @@ main {
 .portfolio-section-item {
   display: inline-block;
   justify-content: center;
-  border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px;
 }
+
+.portfolio-section-text-container {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  width: 360px;
+  height: 120px;
+}
+
+.first-container {
+  margin-bottom: 48px;
+}
+
 .portfolio-section-headers {
   font-weight: 500;
   font-size: 20px;
