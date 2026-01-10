@@ -37,12 +37,14 @@ main {
 }
 
 .container {
-  min-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 auto;
 }
 
 /*---------------------------------HEADER--------------------------------*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-nav {
   display: flex;
@@ -121,8 +123,8 @@ main {
 
 .hero-section {
   background-color: #2e2f42;
-  height: 600px;
 }
+
 .hero-section-title {
   font-weight: 700;
   font-size: 56px;
@@ -132,7 +134,7 @@ main {
   justify-content: center;
   text-align: center;
   color: #fff;
-  margin-top: 188px;
+
   max-width: 496px;
 }
 .hero-section-button {
@@ -148,13 +150,15 @@ main {
   height: 56px;
   border-radius: 4px;
   display: block;
-  margin: 48px auto 188px;
 }
 
 .hero-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  gap: 48px;
 }
 
 .hero-section-button:hover {
@@ -165,8 +169,15 @@ main {
 }
 /*-------------------BENEFITS-------------------*/
 
-.benefits-section-header {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .benefits-section-list {
@@ -174,7 +185,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  height: 344px;
 }
 
 .benefits-section-item {
@@ -196,11 +206,15 @@ main {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+.benefits-section-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /*---------------------TEAM-------------------*/
 
 .team-section {
   background-color: #f4f4fd;
-  height: 732px;
 }
 
 .team-section-title {
@@ -211,20 +225,20 @@ main {
   text-align: center;
   color: #2e2f42;
   padding-top: 120px;
-  padding-bottom: 72px;
 }
 
 .team-section-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 .team-section-item {
   background-color: #fff;
   display: inline-block;
   justify-content: center;
   border-radius: 0 0 4px 4px;
-  /* padding: 0px 0px 32px; */
   width: 264px;
   height: 380px;
 }
@@ -246,7 +260,6 @@ main {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  /* padding-top: 32px; */
   padding-bottom: 8px;
 }
 
@@ -257,7 +270,6 @@ main {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  /* padding-bottom: 32px; */
 }
 
 /*--------------------PORTFOLIO--------------*/
