@@ -109,6 +109,7 @@ main {
 }
 
 .address-link {
+  display: inline-block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -154,6 +155,7 @@ main {
   height: 56px;
   border-radius: 4px;
   display: block;
+  padding: 16px 32px;
 }
 
 .hero-section-container {
@@ -252,9 +254,7 @@ main {
 }
 
 .team-section-text-container {
-  width: 232px;
-  height: 56px;
-  margin: 32px 16px;
+  padding: 32px 16px;
 }
 
 .team-section-names {
@@ -306,11 +306,15 @@ main {
 }
 
 .portfolio-section-text-container {
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+  gap: 8px;
   width: 360px;
   height: 120px;
+  padding: 32px 16px;
 }
 
 .first-container {
@@ -323,9 +327,6 @@ main {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
-  padding-top: 32px;
-  padding-left: 16px;
 }
 .portfolio-section-text {
   font-weight: 400;
@@ -333,8 +334,6 @@ main {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 /*----------------------FOOTER-----------------*/
