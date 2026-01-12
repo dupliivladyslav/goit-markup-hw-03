@@ -184,11 +184,12 @@ main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 .benefits-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .benefits-section-list {
@@ -209,6 +210,7 @@ main {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .benefits-section-text {
   font-weight: 400;
@@ -295,8 +297,8 @@ main {
 .portfolio-section-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  padding-bottom: 48px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
@@ -315,10 +317,6 @@ main {
   width: 360px;
   height: 120px;
   padding: 32px 16px;
-}
-
-.first-container {
-  margin-bottom: 48px;
 }
 
 .portfolio-section-headers {
